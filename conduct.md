@@ -1,7 +1,7 @@
 ---
 layout: page
 title: Code of conduct
-permalink: /conduct/
+permalink: conduct/
 order: 30
 ---
 
