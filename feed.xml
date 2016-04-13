@@ -1,30 +1,62 @@
----
-layout: null
----
 <?xml version="1.0" encoding="UTF-8"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>{{ site.title | xml_escape }}</title>
-    <description>{{ site.description | xml_escape }}</description>
-    <link>{{ site.url }}{{ site.baseurl }}/</link>
-    <atom:link href="{{ "/feed.xml" | prepend: site.baseurl | prepend: site.url }}" rel="self" type="application/rss+xml"/>
-    <pubDate>{{ site.time | date_to_rfc822 }}</pubDate>
-    <lastBuildDate>{{ site.time | date_to_rfc822 }}</lastBuildDate>
-    <generator>Jekyll v{{ jekyll.version }}</generator>
-    {% for post in site.posts limit:10 %}
+    <title>PyDiff - the Cardiff Python meetup</title>
+    <description>PyDiff is a Python and Django user group based in Cardiff, Wales. PyDiff holds monthly meetups in Cardiff for anyone who uses or wants to learn about Python. We hold technical talks and workshops and occasional social events to which everyone is welcome, from experienced programmers to new learners, wherever their interest lies.</description>
+    <link>http://www.pydiff.wales/</link>
+    <atom:link href="http://www.pydiff.wales/feed.xml" rel="self" type="application/rss+xml"/>
+    <pubDate>Wed, 13 Apr 2016 09:29:35 +0100</pubDate>
+    <lastBuildDate>Wed, 13 Apr 2016 09:29:35 +0100</lastBuildDate>
+    <generator>Jekyll v3.1.2</generator>
+    
       <item>
-        <title>{{ post.title | xml_escape }}</title>
-        <description>{{ post.content | xml_escape }}</description>
-        <pubDate>{{ post.date | date_to_rfc822 }}</pubDate>
-        <link>{{ post.url | prepend: site.baseurl | prepend: site.url }}</link>
-        <guid isPermaLink="true">{{ post.url | prepend: site.baseurl | prepend: site.url }}</guid>
-        {% for tag in post.tags %}
-        <category>{{ tag | xml_escape }}</category>
-        {% endfor %}
-        {% for cat in post.categories %}
-        <category>{{ cat | xml_escape }}</category>
-        {% endfor %}
+        <title>Road-test your DjangoCon Europe proposal at PyDiff</title>
+        <description>&lt;p&gt;&lt;a href=&quot;http://2016.djangocon.eu&quot;&gt;DjangoCon Europe 2016&lt;/a&gt; will be held in Budapest, 30th March to 3rd April.&lt;/p&gt;
+
+&lt;p&gt;Speaking at a DjangoCon is a great experience: you’ll find a friendly and interested audience, and
+you’re pretty much guaranteed to discover a lot of people who are very keen to talk some more
+about what you have to say.&lt;/p&gt;
+
+&lt;p&gt;This might seem like a big step if you’ve never addressed a conference before, but the DjangoCon
+Europe &lt;a href=&quot;https://2016.djangocon.eu/cfp/&quot;&gt;call for proposals&lt;/a&gt; explicitly encourages and invites new
+speakers to submit talks. In other words, if you’ve never spoken at a DjangoCon or similar event
+before, they want you - &lt;em&gt;yes, you&lt;/em&gt; - &lt;strong&gt;yes, &lt;em&gt;you&lt;/em&gt;&lt;/strong&gt;, the one saying “who, me?” - to submit a talk.&lt;/p&gt;
+
+&lt;p&gt;This isn’t just an idle invitation. It’s being backed up by a &lt;em&gt;speaker mentor programme&lt;/em&gt;, to help
+put you in touch with an experienced speaker who will be delighted to help you prepare your
+proposal and practise your talk - take advantage of it!&lt;/p&gt;
+
+&lt;p&gt;Still, &lt;strong&gt;there’s nothing like practicisng your talk before a small audience&lt;/strong&gt;, so to help, PyDiff
+will offer you just that.&lt;/p&gt;
+
+&lt;p&gt;If you think you’d like to submit a DjangoCon proposal, get in touch with us. We can help you with
+it if you like, but what we’ll also do is arrange a special PyDiff meetup where you - most likely
+along with a couple of other potential DjangoCon speakers - can &lt;strong&gt;road-test your talk&lt;/strong&gt; and get
+some &lt;strong&gt;friendly feedback&lt;/strong&gt; before you take on the big stage in Budapest.&lt;/p&gt;
+
+&lt;p&gt;Just drop us a line via the usual channels if you’re interested. The Call for Papers deadline is
+the 14th January, but &lt;strong&gt;we’d love to be the guinea pigs for your talk&lt;/strong&gt; any time between now and
+DjangoCon.&lt;/p&gt;
+</description>
+        <pubDate>Wed, 02 Dec 2015 00:00:00 +0000</pubDate>
+        <link>http://www.pydiff.wales/2015/12/02/djangocon.html</link>
+        <guid isPermaLink="true">http://www.pydiff.wales/2015/12/02/djangocon.html</guid>
+        
+        
       </item>
-    {% endfor %}
+    
+      <item>
+        <title>Welcome to PyDiff!</title>
+        <description>&lt;p&gt;PyDiff is the brand new Cardiff based Python and Django user group. We will be meeting monthly to share ideas, learn and have lots of fun! Meetings will probably be at the School of Mathematics on Senghennydd Road, Cathays, and we will keep you posted here about the date of the first meeting.&lt;/p&gt;
+
+&lt;p&gt;In the meantime, keep and eye on this website and follow us on twitter &lt;a href=&quot;https://twitter.com/PyDiff&quot;&gt;@PyDiff&lt;/a&gt;. We are excited to meet you.&lt;/p&gt;
+</description>
+        <pubDate>Wed, 16 Sep 2015 13:54:36 +0100</pubDate>
+        <link>http://www.pydiff.wales/2015/09/16/welcome-to-pydiff.html</link>
+        <guid isPermaLink="true">http://www.pydiff.wales/2015/09/16/welcome-to-pydiff.html</guid>
+        
+        
+      </item>
+    
   </channel>
 </rss>
